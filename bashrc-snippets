@@ -1,0 +1,7 @@
+# Git Aware Prompt https://github.com/jimeh/git-aware-prompt
+export GITAWAREPROMPT=~/.bash/git-aware-prompt
+source $GITAWAREPROMPT/main.sh
+
+PS1='\n${debian_chroot:+($debian_chroot)} \[\033[0;34m\]\w\[\033[00m\] \[$bldylw\]$git_branch\[$txtred\]$git_dirty\[$txtrst\]\n\[\033[0;31m\]>\[\033[00m\] '
+
+
